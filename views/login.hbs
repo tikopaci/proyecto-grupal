@@ -1,0 +1,21 @@
+<div class="container-fluid d-flex justify-content-center align-items-center bg-dark" style="height: 100vh">
+    <div class="row ">
+        <div class="col p-3 bg-light rounded">
+            <form method="post" action="/login/logged">
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="username" class="form-label">Nombre de usuario</label>
+                        <input type="text" class="form-control" name="username">
+                    </div>
+
+                    <div class="col">
+                        <label for="pass" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="pass">
+                    </div>
+                </div>
+                <p class="text-danger">{{message}}</p>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
